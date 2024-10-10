@@ -1,16 +1,16 @@
-# Laboratório 01: Iniciar com o Serviço Azure OpenAI
+# Laboratório 01: Comece a utilizar o Serviço Azure OpenAI
 
 ### Duração Estimada: 40 minutos
 
 ## Cenário do Laboratório
-O Serviço Azure OpenAI traz os modelos de IA generativa desenvolvidos pela OpenAI para a plataforma Azure, permitindo que você desenvolva soluções de IA poderosas que se beneficiam da segurança, escalabilidade e integração dos serviços fornecidos pela plataforma de nuvem Azure. Neste exercício, você aprenderá como começar a usar o Azure OpenAI provisionando o serviço como um recurso do Azure e usando o Azure OpenAI Studio para implantar e explorar modelos OpenAI.
+O Serviço Azure OpenAI traz os modelos de IA generativa desenvolvidos pela OpenAI para a plataforma Azure, permitindo que você desenvolva soluções poderosas de IA que se beneficiam da segurança, escalabilidade e integração dos serviços fornecidos pela plataforma de nuvem Azure. Neste exercício, você aprenderá como começar a utilizar o Azure OpenAI, provisionando o serviço como um recurso do Azure e usando o Azure OpenAI Studio para implantar e explorar modelos OpenAI.
 
 ## Objetivos do Laboratório
-Neste laboratório, você completará as seguintes tarefas:
+Neste laboratório, você concluirá as seguintes tarefas:
 
 - Tarefa 1: Provisionar um recurso Azure OpenAI
 - Tarefa 2: Implantar um modelo
-- Tarefa 3: Explorar um modelo no playground de Completações
+- Tarefa 3: Explorar um modelo no playground de Conclusões
 - Tarefa 4: Usar o playground de Chat
 - Tarefa 5: Explorar prompts e parâmetros
 - Tarefa 6: Explorar a geração de código
@@ -41,7 +41,7 @@ Antes de usar os modelos do Azure OpenAI, você deve provisionar um recurso Azur
 
    ![](../media/8-10-24(13).png)
 
-5. Aguarde a conclusão da implementação. Depois, vá para o recurso Azure OpenAI implementado através do portal de Azure.
+5. Aguarde o término da implantação. Em seguida, acesse o recurso do Azure OpenAI implantado no portal do Azure.
 
 #### Validação
 
@@ -52,9 +52,9 @@ Antes de usar os modelos do Azure OpenAI, você deve provisionar um recurso Azur
 
    <validation step="1fa0e87b-eb46-463d-b63b-edf6e2282e16" />
 
-## Tarefa 2: Implementar um modelo
+## Tarefa 2: Implantar um modelo
 
-O Azure OpenAI fornece um portal baseado na web chamado **Azure OpenAI Studio**, que você pode usar para Implementar, gerenciar e explorar modelos. Você começará sua exploração do Azure OpenAI usando o Azure OpenAI Studio para Implementar um modelo.
+O Azure OpenAI fornece um portal baseado na web chamado **Azure OpenAI Studio**, que você pode usar para Implantar, gerenciar e explorar modelos. Você começará sua exploração do Azure OpenAI usando o Azure OpenAI Studio para Implantar um modelo.
 
 1. No **portal do Azure**, pesquise por **OpenAI** e selecione **OpenAI**.
 
@@ -99,7 +99,7 @@ O Azure OpenAI fornece um portal baseado na web chamado **Azure OpenAI Studio**,
 
 > **Nota**: Você pode ignorar qualquer erro relacionado à atribuição de papéis para visualizar os limites de cota.
 
-> **Nota**: O Azure OpenAI inclui vários modelos, cada um otimizado para um equilíbrio diferente entre capacidades e desempenho. Neste exercício, você usará o modelo **GPT-35-Turbo**, que é um bom modelo geral para resumir e gerar linguagem natural e código. Para mais informações sobre os modelos disponíveis no Azure OpenAI, consulte [Modelos](https://learn.microsoft.com/azure/cognitive-services/openai/concepts/models) na documentação do Azure OpenAI.
+> **Nota**: O Azure OpenAI inclui vários modelos, cada um otimizado para um equilíbrio diferente entre capacidades e desempenho. Neste exercício, você usará o modelo **GPT-35-Turbo**, que é um bom modelo geral para resumir, gerar linguagem natural e código. Para mais informações sobre os modelos disponíveis no Azure OpenAI, consulte [Modelos](https://learn.microsoft.com/azure/cognitive-services/openai/concepts/models) na documentação do Azure OpenAI.
 
 #### Validação
 
@@ -110,13 +110,13 @@ O Azure OpenAI fornece um portal baseado na web chamado **Azure OpenAI Studio**,
 
    <validation step="3b4a472e-f956-45d8-b828-3e2cc01c2e88" />
 
-## Tarefa 3: Explorar um modelo no playground de Completações
+## Tarefa 3: Explorar um modelo no playground de Conclusões
 
 Os *Playgrounds* são interfaces úteis no Azure OpenAI Studio que você pode usar para experimentar seus modelos implementados sem precisar desenvolver a sua aplicação cliente.
 
-1. No Azure OpenAI Studio, no painel esquerdo, em **Playgrounds**, selecione **Completações**.
+1. No Azure OpenAI Studio, no painel esquerdo, em **Playgrounds**, selecione **Conclusões**.
 
-2. Na página **Completações**, certifique-se de que sua implementação **my-gpt-model** esteja selecionada e, na lista **Exemplos**, selecione **Gerar um questionário (1)**.
+2. Na página **Conclusões**, certifique-se de que sua implementação **my-gpt-model** esteja selecionada e, na lista **Exemplos**, selecione **Gerar um questionário (1)**.
    
    > **Nota:** O texto resumido consiste em um *prompt* que fornece algum texto para dizer ao modelo que tipo de resposta é necessária e inclui algumas informações contextuais.
 
@@ -128,15 +128,15 @@ Os *Playgrounds* são interfaces úteis no Azure OpenAI Studio que você pode us
 
    A resposta consiste em um questionário baseado no exemplo no prompt.
 
-   >**Observação**: Você pode usar o botão **Regenerar** para reenviar o prompt (novas alterações foram feitas) e observe que a resposta pode variar da original. Um modelo de IA generativa pode produzir uma nova linguagem cada vez que é chamado.
+   >**Observação**: Você pode usar o botão **Regenerar** para reenviar o prompt (com as novas alterações feitas), e observe que a resposta pode variar da original. Um modelo de IA generativa pode produzir uma nova linguagem cada vez que é chamado.
 
-6. Use o botão **Ver Código** para visualizar o código que um aplicativo cliente usaria para enviar o prompt. Você pode selecionar sua linguagem de programação preferida. O prompt contém o texto que você enviou ao modelo. A solicitação é enviada à API *Completações* para o seu serviço Azure OpenAI.
+6. Use o botão **Exibir Código** para visualizar o código que um aplicativo cliente usaria para enviar o prompt. Você pode selecionar sua linguagem de programação preferida. O prompt contém o texto que você enviou ao modelo. A solicitação é enviada à API *Conclusões* para o seu serviço Azure OpenAI.
 
    ![](../media/8-10-24(22).png)
    
    ![](../media/8-10-24(23).png)
 
-## Tarefa 4: Use o playground de Chat
+## Tarefa 4: Usar o playground de Chat
 
 O playground *Chat* fornece uma interface de chatbot para os modelos GPT 3.5 e superiores. Ele usa a API *ChatCompletions* em vez da antiga API *Completions*.
 
@@ -154,7 +154,7 @@ O playground *Chat* fornece uma interface de chatbot para os modelos GPT 3.5 e s
 
       ![](../media/8-10-24(26).png)
 
-      > **Nota**: Exemplos de poucos-tiros são usados para fornecer ao modelo exemplos dos tipos de respostas esperadas. O modelo tentará refletir o tom e o estilo dos exemplos em suas próprias respostas.
+      > **Nota**: Exemplos com poucos dados são empregados para demonstrar ao modelo os padrões desejados de resposta. O modelo buscará replicar o estilo e o tom desses exemplos em suas saídas.
   
 5. Clique em **Save** e, em seguida, clique em **Continuar** na guia pop-up **Atualizar mensagem do sistema** para iniciar uma nova sessão e definir o contexto comportamental para o sistema de chat.
 
@@ -172,11 +172,11 @@ O playground *Chat* fornece uma interface de chatbot para os modelos GPT 3.5 e s
 
 10. Revise a resposta, observando que o contexto da interação anterior é mantido (portanto, o modelo entende que "isso" se refere à inteligência artificial).
 
-11. Use o botão **Exibir Código** para visualizar o código da interação. O prompt consiste na mensagem *system*, os exemplos de poucos-tiros de mensagens *user* e *assistant*, e a sequência de mensagens *user* e *assistant* na sessão de chat até o momento.
+11. Use o botão **Exibir Código** para inspecionar o código da interação. O prompt compreende a *mensagem do sistema*, os exemplos com poucos dados das *mensagens de usuário* e *assistente*, e a sequência de *mensagens de usuário* e *assistente* na sessão de chat até então.
 
     ![](../media/8-10-24(29).png)
 
-## Tarefa 5: Explore prompts e parâmetros
+## Tarefa 5: Explorar prompts e parâmetros
 
 Você pode usar o prompt e os parâmetros para maximizar a probabilidade de gerar a resposta que você precisa.
 
@@ -203,19 +203,20 @@ Você pode usar o prompt e os parâmetros para maximizar a probabilidade de gera
 
 3. Revise os resultados, que devem consistir em perguntas de múltipla escolha que um professor poderia usar para testar os alunos sobre os tópicos de visão computacional no prompt. A resposta total deve ser menor do que o comprimento máximo especificado como parâmetro.
 
-    Observe o seguinte sobre o prompt e os parâmetros que você usou:
+    Observe as seguintes características do prompt e dos parâmetros empregados:
 
     - O prompt especifica que a saída desejada deve ser três perguntas de múltipla escolha.
-    
-    - Os parâmetros incluem *Temperatura*, que controla o grau em que a geração de resposta inclui um elemento de aleatoriedade. O valor de **0** usado na sua submissão minimiza a aleatoriedade, resultando em respostas estáveis e previsíveis.
+      
+    - Os parâmetros incluem *Temperatura*, que regula o grau de aleatoriedade na geração de respostas. O valor de **0** utilizado em sua submissão minimiza a aleatoriedade, produzindo respostas estáveis e previsíveis.
 
       ![](../media/8-10-24(32).png)
 
-## Tarefa 6: Explore a geração de código
+## Tarefa 6: Explorar a geração de código
 
 Além de gerar respostas em linguagem natural, você pode usar modelos GPT para gerar código.
 
-1. No painel **Configuração**, selecione o modelo **Exemplo Vazio** na seção **Usando modelos** para redefinir a mensagem do sistema, se solicitado, clique em **Continuar**. Insira a mensagem do sistema: `You are a Python developer.` e salve as alterações clicando em **Aplicar alterações** quando solicitado, clique em **Continuar**.
+1. No painel **Configuração**, selecione o modelo **Exemplo Vazio** na seção **Usando modelos** para redefinir a mensagem do sistema, se solicitado, clique em **Continuar**.
+2. Insira a mensagem do sistema: `You are a Python developer.` e salve as alterações clicando em **Salve** quando solicitado, clique em **Continuar**.
   
    ![](../media/8-10-24(33).png)
 
@@ -235,9 +236,9 @@ Além de gerar respostas em linguagem natural, você pode usar modelos GPT para 
 
 ## Resumo
 
-Neste laboratório, você completou o seguinte:
+Neste laboratório, você realizou as seguintes tarefas:
 - Provisionou um recurso Azure OpenAI
-- Implementou um modelo Azure OpenAI dentro do estúdio Azure OpenAI
-- Usou o playground de chat para utilizar as funcionalidades de prompts, parâmetros e geração de código
+- Implantou um modelo do Azure OpenAI no Azure OpenAI Studio
+- Utilizou o playground de chat para explorar as funcionalidades de prompts, parâmetros e geração de código
 
 ### Você completou com sucesso o laboratório.
