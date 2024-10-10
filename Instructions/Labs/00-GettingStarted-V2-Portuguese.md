@@ -1,4 +1,4 @@
-# Comece com o OpenAI e Construa Soluções de Linguagem Natural
+# Introdução ao Azure OpenAI e à Criação de Soluções de Processamento de Linguagem Natural
 
 ### Duração Estimada Total: 4 Horas
 
